@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         rdsum=findViewById(R.id.rdsum)
             rdsub=findViewById(R.id.rdsub)
 
+        val hi="hi";
         btnAdd.setOnClickListener {
             val first:Int=et.text.toString().toInt()
             val second:Int=et1.text.toString().toInt()
