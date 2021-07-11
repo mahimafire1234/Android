@@ -18,12 +18,13 @@ class DashboardActivity : AppCompatActivity() {
 
 //        button click
         btnArithmetic.setOnClickListener {
-            val intent= Intent(this,MainActivity::class.java)
+            val intent= Intent(this,AdditionActivity::class.java)
             startActivity(intent)
         }
 
         btnSimpleInterest.setOnClickListener {
-
+            val intent=Intent(this,CountryCapitalActivity::class.java);
+            startActivity(intent);
         }
 
     }

@@ -20,7 +20,7 @@
     <Button
         android:id="@+id/btnSimpleInterest"
         android:layout_margin="10dp"
-        android:text="Simple Interest"
+        android:text="List view"
         android:textSize="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

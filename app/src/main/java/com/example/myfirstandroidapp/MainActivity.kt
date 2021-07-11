@@ -27,9 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         val hi="hi";
         btnAdd.setOnClickListener {
-            val first:Int=et.text.toString().toInt()
-            val second:Int=et1.text.toString().toInt()
-//text validation
+
             if(TextUtils.isEmpty(et.text)){
                 et.error="Enter first num"
                 et.requestFocus()
@@ -40,10 +38,17 @@ class MainActivity : AppCompatActivity() {
                 et1.requestFocus()
                 return@setOnClickListener
             }
+
+            val first:Int=et.text.toString().toInt()
+            val second:Int=et1.text.toString().toInt()
+//text validation
+
             if(rdsum.isChecked){
                 addNum(first,second)
-            }else{
+            }else if(rdsub.isChecked){
                 subNum(first, second)
+            }else{
+                Toast.makeText(this@MainActivity,"please choose a radio action",Toast.LENGTH_SHORT).show();
             }
         }
     }
